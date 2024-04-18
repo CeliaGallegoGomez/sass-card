@@ -1,0 +1,37 @@
+@use "../mixins/hover.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+@use "../mixins/responsive.scss" as *;
+
+.card {
+  width: 300px;
+  background-image: linear-gradient(orange, purple);
+  padding: 1rem;
+  margin-left: 25px;
+  margin-top: 25px;
+
+  &__title {
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+  }
+
+  @include hover {
+    border: 1px white solid;
+  }
+
+  &::after {
+    @include pseudo(50px, 100px) {
+      background-color: red;
+    }
+  }
+
+  @include responsive(tablet) {
+    width: 500px;
+  }
+
+  @include responsive(laptop) {
+    width: 800px;
+  }
+}

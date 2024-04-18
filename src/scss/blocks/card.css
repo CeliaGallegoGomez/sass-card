@@ -1,0 +1,35 @@
+.card {
+  width: 300px;
+  background-image: linear-gradient(orange, purple);
+  padding: 1rem;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.card__title {
+  margin: 0;
+}
+.card__text {
+  font-size: 1.4rem;
+}
+@media (hover: hover) {
+  .card:hover {
+    border: 1px white solid;
+  }
+}
+.card::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  background-color: red;
+}
+@media screen and (min-width: 640px) {
+  .card {
+    width: 500px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 800px;
+  }
+}/*# sourceMappingURL=card.css.map */
