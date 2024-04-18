@@ -376,18 +376,67 @@ html {
 body {
   background-color: #111;
   font-family: sans-serif;
+  color: white;
 }
 
 .card {
-  width: 300px;
-  background-image: linaer linear-gradient(orange, purple);
-  padding: 1rem;
+  width: 327px;
+  background-color: #1f1f1f;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
 }
-
+.card__avatar {
+  width: 279px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.card__photo {
+  border-radius: 100%;
+  width: 88px;
+  height: 88px;
+}
 .card__title {
+  margin-top: 24px;
+  font-size: 24px;
+}
+.card__subtitle {
   margin: 0;
+  font-size: 14px;
+  color: #c4f82a;
+}
+.card__text {
+  font-size: 14px;
+}
+@media screen and (min-width: mobile) {
+  .card {
+    width: 327px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 384px;
+  }
 }
 
-.card__text {
-  font-size: 1.4rem;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 289px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 279px;
+  background-color: #333333;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
 }/*# sourceMappingURL=styles.css.map */

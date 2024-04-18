@@ -1,0 +1,30 @@
+@use "../mixins/hover.scss" as *;
+@use "../mixins/responsive.scss" as *;
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 289px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  width: 279px;
+  background-color: #333333;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+
+  @include hover {
+    background-color: #c4f82a;
+    color: #333333;
+  }
+
+  @include responsive(laptop) {
+    width: 304px;
+    height: 45px;
+  }
+}
